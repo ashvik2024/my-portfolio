@@ -2,7 +2,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div className="mt-6 sm:mt-10">
+    <div>
       <h2 className="text-black dark:text-gray-300 mb-3 sm:mb-5">education.</h2>
 
       <div className="flex sm:flex-row justify-between items-start mt-3 sm:mt-5 gap-2 sm:gap-0">

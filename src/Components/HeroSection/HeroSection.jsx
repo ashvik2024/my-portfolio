@@ -5,10 +5,11 @@ import DateTimeLocation from "./About/DateTimeLocation";
 import TechnicalSkills from "./Skills/TechnicalSkills";
 import profileGif from "../../assets/profile-gif.gif";
 import Education from "./Education/Education";
+import Achievements from "../Achivments/Achievements";
 
 const HeroSection = () => {
   return (
-    <div className="flex justify-center px-0 sm:px-6 lg:px-8">
+    <div className="flex justify-center ">
       <section className="flex flex-col justify-center max-w-5xl">
         {/* Top Row: GIF + Name + DateTime */}
         <div className="flex flex-col md:flex-row justify-between w-full ">
@@ -51,10 +52,14 @@ const HeroSection = () => {
         <div className="">
           <TechnicalSkills />
         </div>
-
+        <hr className="border-t-2 border-gray-300 my-6 dark:border-gray-700" />
         {/* Education */}
         <div className="">
           <Education />
+        </div>
+        <hr className="border-t-2 border-gray-300 my-6 dark:border-gray-700" />
+        <div className="">
+          <Achievements />
         </div>
       </section>
     </div>
