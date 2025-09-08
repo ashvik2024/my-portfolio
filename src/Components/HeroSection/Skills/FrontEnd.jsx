@@ -10,7 +10,7 @@ const FrontEnd = () => {
   ];
 
   return (
-    <div className="mt-5">
+    <div>
       <h3 className="text-[#454F54] mb-2">
         {`<frontend />`}
       </h3>

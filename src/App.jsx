@@ -2,10 +2,11 @@ import Navbar from "./Components/Navbar/Navbar";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import SplashCursor from "./Components/TextStyles/SplashCursor";
 import Connect from "./Components/Contact/Connect";
+
 function App() {
   return (
     <div
-      className="relative min-h-screen px-20 py-5 "
+      className="relative min-h-screen "
       style={{ backgroundColor: "var(--bg-color)", color: "var(--text-color)" }}
     >
       {/* Grid Background */}
@@ -30,11 +31,19 @@ function App() {
         }}
       ></div>
 
-      <main className="relative min-h-screen z-10 flex justify-center">
-        <div className="w-full max-w-4xl px-4">
+      <main className="relative min-h-screen z-10 flex justify-center  p-6">
+        {/* Add 5px padding on small screens */}
+        <div className="w-full max-w-4xl ">
           <SplashCursor />
-          <Navbar />
-          <HeroSection />
+          {/* Navbar */}
+          <div className="">
+            <Navbar />
+          </div>
+          {/* Hero */}
+          <div className="mt-10 md:mt-5">
+            <HeroSection />
+          </div>
+
           {/* <Connect /> */}
         </div>
       </main>
