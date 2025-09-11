@@ -28,7 +28,7 @@ const HeroSection = () => {
 
               <p className="text-base font-extrabold text-gray-700 dark:text-gray-300">
                 <TextType
-                  text={["MERN Stack Developer asdsa"]}
+                  text={["MERN Stack Developer"]}
                   typingSpeed={200}
                   pauseDuration={15000}
                   showCursor={true}
