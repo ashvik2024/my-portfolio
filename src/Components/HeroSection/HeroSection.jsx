@@ -22,12 +22,13 @@ const HeroSection = () => {
             />
             {/* Name & Role */}
             <div className="text-left">
-              <h1 className="text-4xl font-extrabold font-sans text-gray-900 dark:text-white">
-                <SplitText text="Vikas Kumar" delay={200} duration={0.6} />
-              </h1>
+<h1 className="text-2xl sm:text-4xl font-extrabold font-sans text-gray-900 dark:text-white">
+  <SplitText text="Vikas Kumar" delay={200} duration={0.6} />
+</h1>
+
               <p className="text-base font-extrabold text-gray-700 dark:text-gray-300">
                 <TextType
-                  text={["MERN Stack Developer"]}
+                  text={["MERN Stack Developer asdsa"]}
                   typingSpeed={200}
                   pauseDuration={15000}
                   showCursor={true}
