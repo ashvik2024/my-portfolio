@@ -5,7 +5,7 @@ function Navbar() {
     <nav className="flex items-center justify-center">
       <div className="flex justify-between items-center w-full max-w-5xl">
         {/* Logo */}
-        <h1 className="hover:text-green-500 text-3xl font-semibold">
+        <h1 className="hover:text-green-500 text-xl font-outfit">
           vikas.
         </h1>
 

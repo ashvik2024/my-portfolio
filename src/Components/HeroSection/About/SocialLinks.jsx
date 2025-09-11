@@ -12,10 +12,9 @@ const SocialLinks = () => {
             href="https://github.com/ashvik2024"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 bg-black text-white text-sm sm:text-base rounded-lg transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
+            className="flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2 bg-black text-white text-sm sm:text-base rounded-lg transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
           >
-            <FontAwesomeIcon icon={faGithub} />
-            GitHub
+            <FontAwesomeIcon icon={faGithub} className="text-xl sm:text-2xl" />
           </a>
         </li>
         <li>
@@ -23,10 +22,17 @@ const SocialLinks = () => {
             href="https://www.linkedin.com/in/vikas-kumar-delhi"
             target="_blank"
             rel="noopener noreferrer"
+            className="flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2 bg-black text-white text-sm sm:text-base rounded-lg transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
+          >
+            <FontAwesomeIcon icon={faLinkedinIn} className="text-xl sm:text-2xl" />
+          </a>
+        </li>
+                <li>
+          <a
+            href="mailto:vk3261019@gmail.com"
             className="flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 bg-black text-white text-sm sm:text-base rounded-lg transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
           >
-            <FontAwesomeIcon icon={faLinkedinIn} />
-            LinkedIn
+            <FontAwesomeIcon icon={faEnvelope} className="text-xl sm:text-2xl" />
           </a>
         </li>
         <li>
@@ -36,19 +42,11 @@ const SocialLinks = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 bg-black text-white text-sm sm:text-base rounded-lg transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
           >
-            <FontAwesomeIcon icon={faFilePdf} />
+            <FontAwesomeIcon icon={faFilePdf} className="text-xl sm:text-2xl" />
             Resume
           </a>
         </li>
-        <li>
-          <a
-            href="mailto:vk3261019@gmail.com"
-            className="flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 bg-black text-white text-sm sm:text-base rounded-lg transition-colors dark:bg-white dark:text-black dark:hover:bg-gray-200"
-          >
-            <FontAwesomeIcon icon={faEnvelope} />
-            Email
-          </a>
-        </li>
+
       </ul>
     </div>
   );

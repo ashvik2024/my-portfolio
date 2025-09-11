@@ -20,9 +20,13 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="p-0.7 rounded-md border border-gray-400 text-lg transition"
+      className="flex items-center justify-center w-8 h-8 rounded-md 
+                dark:gray-800 
+                 border border-gray-300 dark:border-gray-600
+                 text-yellow-500 dark:text-gray-200
+                  hover:scale-110 transition-all duration-300"
     >
-      <FontAwesomeIcon icon={darkMode ? faMoon : faSun} />
+      <FontAwesomeIcon icon={darkMode ? faMoon : faSun} className="text-sm" />
     </button>
   );
 }

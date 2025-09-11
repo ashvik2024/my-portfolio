@@ -10,7 +10,7 @@ const Tools = () => {
 
   return (
     <div>
-      <h3 className="text-[#454F54] mb-2">
+      <h3 className="mb-2">
         {`<tools />`}
       </h3>
       <ul className="flex gap-2 flex-wrap">
