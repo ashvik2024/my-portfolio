@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="">
       {/* About Me */}
-      <div className="space-y-3 w-full text-justify">
+      <div className="space-y-3 w-full text-justify mt-5">
         <p className="text-sm sm:text-base lg:text-lg leading-relaxed w-full">
           Hi! 👋 I'm Vikas Kumar, a final-year BCA student and an aspiring MERN
           Stack developer. I started coding with a simple “Hello World” and now

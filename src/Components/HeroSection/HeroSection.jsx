@@ -25,7 +25,7 @@ const HeroSection = () => {
             <div className="text-left ">
               <div className="flex items-center justify-center">
                 <h1 className="text-2xl sm:text-4xl font-extrabold text-gray-900 dark:text-white flex items-center gap-2">
-                  <SplitText text="Vikas Kumar" delay={200} duration={0.6} />
+                  <SplitText text= "Vikas Kumar" delay={200} duration={0.6} />
                   {/* Checkmark Icon */}
                   <svg
                     stroke="currentColor"

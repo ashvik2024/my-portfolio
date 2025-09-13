@@ -6,7 +6,7 @@ const Education = () => {
       <h2 className="text-black dark:text-gray-300 mb-3 sm:mb-5">education.</h2>
 
       {/* Education Item */}
-      <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-3 sm:mt-5">
+      <div className="flex sm:flex-row justify-between sm:items-center mt-3 sm:mt-5">
         <div className="sm:w-3/4">
           <h3 className="text-base sm:text-lg font-semibold">
             Bachelor's in Computer Application (BCA)
@@ -21,7 +21,7 @@ const Education = () => {
       </div>
 
       {/* Education Item */}
-      <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-3 sm:mt-5">
+      <div className="flex sm:flex-row justify-between sm:items-center mt-3 sm:mt-5">
         <div className="sm:w-3/4">
           <h3 className="text-base sm:text-lg font-semibold">
             Senior Secondary (XII)

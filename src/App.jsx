@@ -30,26 +30,26 @@ function App() {
           WebkitMaskComposite: "destination-in",
         }}
       ></div>
-<main
-  className="relative min-h-screen z-10 flex justify-center 
-             p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10"
->
-  <div className="w-full max-w-2xl">
-    <SplashCursor />
+      <main
+        className="relative min-h-screen z-10 flex justify-center 
+             p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10 px-3 py-5"
+      >
+        <div className="w-full max-w-2xl">
+          <SplashCursor />
 
-    {/* Navbar */}
-    <div>
-      <Navbar />
-    </div>
+          {/* Navbar */}
+          <div>
+            <Navbar />
+          </div>
 
-    {/* Hero */}
-    <div className="mt-10 sm:mt-16 md:mt-20">
-      <HeroSection />
-    </div>
+          {/* Hero */}
+          <div className="mt-10 sm:mt-16 md:mt-20">
+            <HeroSection />
+          </div>
 
-    {/* <Connect /> */}
-  </div>
-</main>
+          {/* <Connect /> */}
+        </div>
+      </main>
 
     </div>
   );
