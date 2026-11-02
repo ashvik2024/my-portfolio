@@ -20,13 +20,10 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setDarkMode(!darkMode)}
-      className="flex items-center justify-center w-8 h-8 rounded-md 
-                dark:gray-800 
-                 border border-gray-300 dark:border-gray-600
-                 text-yellow-500 dark:text-gray-200
-                  hover:scale-110 transition-all duration-300"
+      className="flex items-center justify-center w-9 h-9 rounded-full border border-gray-400/40 hover:scale-105 transition-all"
+      aria-label={darkMode ? "Use light theme" : "Use dark theme"}
     >
-      <FontAwesomeIcon icon={darkMode ? faMoon : faSun} className="text-sm" />
+      <FontAwesomeIcon icon={darkMode ? faSun : faMoon} className="text-sm" />
     </button>
   );
 }

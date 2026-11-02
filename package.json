@@ -1,40 +1,41 @@
 {
-  "name": "my-portfolio",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^7.0.1",
-    "@fortawesome/free-brands-svg-icons": "^7.0.1",
-    "@fortawesome/free-regular-svg-icons": "^7.0.1",
-    "@fortawesome/free-solid-svg-icons": "^7.0.1",
-    "@fortawesome/react-fontawesome": "^3.0.2",
-    "@splinetool/react-spline": "^4.1.0",
-    "framer-motion": "^12.23.12",
-    "gsap": "^3.13.0",
-    "postprocessing": "^6.37.7",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "three": "^0.179.1"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.33.0",
-    "@types/react": "^19.1.10",
-    "@types/react-dom": "^19.1.7",
-    "@vitejs/plugin-react": "^5.0.0",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9.33.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17",
-    "vite": "^7.1.2"
-  }
+	"name": "my-portfolio",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"lint": "eslint .",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^7.0.1",
+		"@fortawesome/free-brands-svg-icons": "^7.0.1",
+		"@fortawesome/free-regular-svg-icons": "^7.0.1",
+		"@fortawesome/free-solid-svg-icons": "^7.0.1",
+		"@fortawesome/react-fontawesome": "^3.0.2",
+		"gsap": "^3.15.0",
+		"lenis": "^1.3.27",
+		"motion": "^12.43.0",
+		"react": "^19.1.1",
+		"react-dom": "^19.1.1",
+		"react-icons": "^5.7.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.33.0",
+		"@jsrepo/transform-javascript": "^8.0.2",
+		"@types/react": "^19.1.10",
+		"@types/react-dom": "^19.1.7",
+		"@vitejs/plugin-react": "^5.0.0",
+		"autoprefixer": "^10.4.21",
+		"eslint": "^9.33.0",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-refresh": "^0.4.20",
+		"globals": "^16.3.0",
+		"jsrepo": "^3.8.2",
+		"postcss": "^8.5.6",
+		"tailwindcss": "^3.4.17",
+		"vite": "^7.1.2"
+	}
 }

@@ -1,41 +1,20 @@
-import React from "react";
+import CountUp from "../../ReactBits/CountUp";
 
-const Education = () => {
-  return (
-    <div>
-      <h2 className="text-black dark:text-gray-300 mb-3 sm:mb-5">education.</h2>
-
-      {/* Education Item */}
-      <div className="flex sm:flex-row justify-between sm:items-center mt-3 sm:mt-5">
-        <div className="sm:w-3/4">
-          <h3 className="text-base sm:text-lg font-semibold">
-            Bachelor's in Computer Application (BCA)
-          </h3>
-          <p className="">
-            DSEU Shakarpur Campus-1
-          </p>
-        </div>
-        <div className="sm:w-1/4 sm:text-right mt-1 sm:mt-0">
-          <p className="">2023-2026</p>
-        </div>
+const Education = () => (
+  <section id="education" className="section education-section">
+    <div className="section-heading"><p>04 / Education</p><h2>Strong fundamentals, built in Delhi.</h2></div>
+    <article className="education-card">
+      <div>
+        <p className="eyebrow">2023 — 2026</p>
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p>Delhi Skill and Entrepreneurship University (DSEU)</p>
       </div>
-
-      {/* Education Item */}
-      <div className="flex sm:flex-row justify-between sm:items-center mt-3 sm:mt-5">
-        <div className="sm:w-3/4">
-          <h3 className="text-base sm:text-lg font-semibold">
-            Senior Secondary (XII)
-          </h3>
-          <p className="">
-            S (Co-ed) Vidyalaya, Begumpur, New Delhi
-          </p>
-        </div>
-        <div className="sm:w-1/4 sm:text-right mt-1 sm:mt-0">
-          <p className="">2016-2023</p>
-        </div>
+      <div className="grade">
+        <div className="grade-score"><span className="score-arrow" aria-hidden="true">↗</span><strong><CountUp to={7} decimals={1} duration={2.2} /></strong></div>
+        <span>CGPA / 10</span>
       </div>
-    </div>
-  );
-};
+    </article>
+  </section>
+);
 
 export default Education;
