@@ -72,7 +72,6 @@ const ProjectShowcase = () => {
           y: 80, opacity: 0, rotateY: 8, duration: 0.9, stagger: 0.12, ease: "power3.out",
           scrollTrigger: { trigger: carousel.current, start: "top 82%" },
         });
-        gsap.to(".project-window", { y: -9, rotate: -1, duration: 2, stagger: 0.2, repeat: -1, yoyo: true, ease: "sine.inOut" });
       });
     }, section);
     return () => context.revert();
@@ -109,12 +108,9 @@ const ProjectShowcase = () => {
             onPointerMove={(event) => {
               if (event.pointerType !== "mouse") return;
               const rect = event.currentTarget.getBoundingClientRect();
-              gsap.to(event.currentTarget, {
+              gsap.set(event.currentTarget, {
                 rotateX: (event.clientY - rect.top) / rect.height * -8 + 4,
                 rotateY: (event.clientX - rect.left) / rect.width * 8 - 4,
-                duration: 0.25,
-                ease: "power2.out",
-                overwrite: "auto",
               });
             }}
             onPointerLeave={(event) => gsap.to(event.currentTarget, { rotateX: 0, rotateY: 0, duration: 0.45, ease: "power3.out", overwrite: "auto" })}

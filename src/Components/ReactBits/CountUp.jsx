@@ -441,7 +441,7 @@ export default function CountUp({
         </>
       ) : (
         <span key="count" ref={textRef}>
-          {initialText}
+          {active && startWhen ? finalText : initialText}
         </span>
       )}
     </span>

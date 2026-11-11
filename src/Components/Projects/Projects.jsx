@@ -39,13 +39,10 @@ const Projects = () => (
           onPointerMove={(event) => {
             if (event.pointerType !== "mouse" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
             const rect = event.currentTarget.getBoundingClientRect();
-            gsap.to(event.currentTarget, {
+            gsap.set(event.currentTarget, {
               "--cursor-x": `${event.clientX - rect.left}px`,
               "--cursor-y": `${event.clientY - rect.top}px`,
               "--cursor-opacity": 1,
-              duration: 0.4,
-              ease: "power3.out",
-              overwrite: "auto",
             });
           }}
           onPointerLeave={(event) => gsap.to(event.currentTarget, { "--cursor-opacity": 0, duration: 0.5, ease: "power2.out" })}

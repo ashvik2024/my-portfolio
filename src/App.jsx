@@ -31,7 +31,7 @@ function App() {
     gsap.ticker.add(updateScroll);
 
     const context = gsap.context(() => {
-      ["#experience", "#education"].forEach((selector) => {
+      ["#experience", "#education", "#github"].forEach((selector) => {
         gsap.from(`${selector} .section-heading > *`, {
           y: 35, opacity: 0, duration: 0.75, stagger: 0.1, ease: "power3.out",
           scrollTrigger: { trigger: selector, start: "top 75%", once: true },
@@ -49,6 +49,16 @@ function App() {
         opacity: 0.65,
         ease: "none",
         scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom 35%", scrub: 0.8 },
+      });
+      gsap.matchMedia().add("(max-width: 700px)", () => {
+        gsap.fromTo(".github-chart", { y: 64 }, {
+          y: -64, ease: "none",
+          scrollTrigger: { trigger: ".github-chart", start: "top bottom", end: "bottom top", scrub: 0.6 },
+        });
+        gsap.from(".github-chart-scroll", {
+          opacity: 0, scale: 0.92, duration: 0.8, ease: "power3.out",
+          scrollTrigger: { trigger: ".github-chart", start: "top 82%", once: true },
+        });
       });
     });
 

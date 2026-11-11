@@ -72,8 +72,8 @@ const TechnicalSkills = () => {
     const rect = card.getBoundingClientRect();
     const x = (event.clientX - rect.left) / rect.width - 0.5;
     const y = (event.clientY - rect.top) / rect.height - 0.5;
-    gsap.to(card.querySelector(".skill-icon"), { x: x * 16, y: y * 16, rotate: x * 7, duration: 0.45, ease: "power3.out", overwrite: "auto" });
-    gsap.to(card.querySelectorAll(".skill-chip svg"), { x: x * 4, y: y * 4, duration: 0.55, stagger: 0.015, ease: "power3.out", overwrite: "auto" });
+    gsap.set(card.querySelector(".skill-icon"), { x: x * 16, y: y * 16, rotate: x * 7 });
+    gsap.set(card.querySelectorAll(".skill-chip svg"), { x: x * 4, y: y * 4 });
   };
 
   const resetIcons = (event) => {
@@ -103,7 +103,7 @@ const TechnicalSkills = () => {
 
   return (
     <section ref={section} id="skills" className="section">
-      <div className="section-heading expertise-heading"><p>03 / Expertise</p><h2>Modern tools. Production mindset.</h2></div>
+      <div className="section-heading expertise-heading"><p>04 / Expertise</p><h2>Modern tools. Production mindset.</h2></div>
       <div className="skills-grid">
         {groups.map(({ title, icon, skills }, index) => (
           <AnimatedContent
